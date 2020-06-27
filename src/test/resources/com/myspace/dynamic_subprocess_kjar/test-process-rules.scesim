@@ -53,7 +53,30 @@
           <factAlias>Product</factAlias>
           <expressionAlias>name</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>506.5</columnWidth>
+          <columnWidth>253.25</columnWidth>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Product</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>price</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1593272550964</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>1|1</name>
+            <className>com.myspace.dynamic_subprocess_kjar.Product</className>
+          </factIdentifier>
+          <className>java.lang.Integer</className>
+          <factAlias>Product</factAlias>
+          <expressionAlias>price</expressionAlias>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>253.25000000000006</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -76,7 +99,30 @@
           <factAlias>ProcessExchangeModel</factAlias>
           <expressionAlias>subprocess</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>506.5</columnWidth>
+          <columnWidth>253.25</columnWidth>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>ProcessExchangeModel</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>message</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1593272500306</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>1|2</name>
+            <className>com.myspace.dynamic_subprocess_kjar.ProcessExchangeModel</className>
+          </factIdentifier>
+          <className>java.lang.String</className>
+          <factAlias>ProcessExchangeModel</factAlias>
+          <expressionAlias>message</expressionAlias>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>253.25000000000006</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -126,6 +172,28 @@
               <type>EXPECT</type>
             </expressionIdentifier>
             <rawValue class="string">child-a</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1|2</name>
+              <className>com.myspace.dynamic_subprocess_kjar.ProcessExchangeModel</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1593272500306</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">a product with price 100</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1|1</name>
+              <className>com.myspace.dynamic_subprocess_kjar.Product</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1593272550964</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">100</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
