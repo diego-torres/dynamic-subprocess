@@ -3,7 +3,6 @@ package com.myspace.dynamic_subprocess_kjar;
 import org.kie.api.runtime.process.WorkflowProcessInstance;
 
 rule "Product X process"
-no-loop true
 when
     $product: Product (name == "Product X")
     $exchangeModel : ProcessExchangeModel( )
