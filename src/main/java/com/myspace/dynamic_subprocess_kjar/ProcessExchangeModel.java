@@ -13,11 +13,6 @@ public class ProcessExchangeModel implements java.io.Serializable {
 
 	public ProcessExchangeModel() {
 	}
-	
-	public ProcessExchangeModel(String subprocess, String message) {
-	    this.subprocess = subprocess;
-	    this.message = message;
-	}
 
 	public java.lang.String getSubprocess() {
 		return this.subprocess;
