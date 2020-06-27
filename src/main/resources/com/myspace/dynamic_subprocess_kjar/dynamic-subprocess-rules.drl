@@ -6,9 +6,8 @@ rule "Product X process"
 no-loop true
 when
     $product: Product (name == "Product X")
-    $process : WorkflowProcessInstance( )
+    $exchangeModel : ProcessExchangeModel( )
 then
-    WorkflowProcessInstance $processInstance = (WorkflowProcessInstance)kcontext.getKieRuntime().getProcessInstance($process.getId());
-    $processInstance.setVariable( "processExchange", new ProcessExchangeModel("child-a", "Product with price: " + $product.getPrice()) );
-    retract($process);
+    $exchangeModel.setSubprocess("child-a");
+    $exchangeModel.setMessage("Product with price: " + $product.getPrice());
 end
