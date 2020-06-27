@@ -37,7 +37,7 @@ public class ProcessExchangeModel implements java.io.Serializable {
 	}
 	
 	public String toString() {
-	    return "Subprocess: " + subprocess + ", Message: " + message;
+	    return "Subprocess: " + subprocess + "; Message: " + message;
 	}
 
 }
