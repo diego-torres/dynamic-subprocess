@@ -1,12 +1,14 @@
 package com.myspace.dynamic_subprocess_kjar;
 
+import org.kie.api.runtime.process.WorkflowProcessInstance;
+
 rule "Product X process"
 no-loop true
 when
-    $p: Product (name == "Product X"),
+    $product: Product (name == "Product X")
     $process : WorkflowProcessInstance( )
 then
-    WorkflowProcessInstance $p = (WorkflowProcessInstance)kcontext.getKieRuntime().getProcessInstance($process.getId()); //casting to WorkflowProcessInstance is essential
-    $p.setVariable( "processExchange", new ProcessExchange("child-a", "Product with price: " + $p.getPrice() );
+    WorkflowProcessInstance $processInstance = (WorkflowProcessInstance)kcontext.getKieRuntime().getProcessInstance($process.getId());
+    $processInstance.setVariable( "processExchange", new ProcessExchangeModel("child-a", "Product with price: " + $product.getPrice()) );
     retract($process);
 end
