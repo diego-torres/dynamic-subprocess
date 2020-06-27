@@ -182,7 +182,7 @@
               <name>1593272500306</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">a product with price 100</rawValue>
+            <rawValue class="string">a product was received with price: 100</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
