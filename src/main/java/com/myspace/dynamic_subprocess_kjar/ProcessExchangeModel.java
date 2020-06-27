@@ -6,12 +6,34 @@ package com.myspace.dynamic_subprocess_kjar;
 
 public class ProcessExchangeModel implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ProcessExchangeModel() {
-    }
+	private java.lang.String subprocess;
+	private java.lang.String message;
 
+	public ProcessExchangeModel() {
+	}
 
+	public java.lang.String getSubprocess() {
+		return this.subprocess;
+	}
 
+	public void setSubprocess(java.lang.String subprocess) {
+		this.subprocess = subprocess;
+	}
+
+	public java.lang.String getMessage() {
+		return this.message;
+	}
+
+	public void setMessage(java.lang.String message) {
+		this.message = message;
+	}
+
+	public ProcessExchangeModel(java.lang.String subprocess,
+			java.lang.String message) {
+		this.subprocess = subprocess;
+		this.message = message;
+	}
 
 }
