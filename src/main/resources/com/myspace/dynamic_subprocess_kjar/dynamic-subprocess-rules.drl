@@ -4,5 +4,5 @@ rule "Product X process"
 when
     $p: Product (name == "Product X")
 then
-    insert(new ProcessExchangeModel("child-a", "a product was received with price: " + $p.price()))
+    insert(new ProcessExchangeModel("child-a", "a product was received with price: " + $p.price()));
 end
