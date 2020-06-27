@@ -36,6 +36,6 @@ public class Product implements java.io.Serializable {
 	}
     
     public String toString() {
-        return "Product Name: " + name + ", price: $" + price;
+        return "Product Name: " + name + "; price: $" + price;
     }
 }
