@@ -4,6 +4,7 @@ rule "Product X process"
 when
     $p: Product (name == "Product X")
 then
+    System.out.println("Found the product X here!");
     insert(new ProcessExchangeModel("child-a", "a product was received with price: " + $p.getPrice()));
 end
 
