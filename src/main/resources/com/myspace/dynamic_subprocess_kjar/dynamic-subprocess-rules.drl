@@ -1,2 +1,8 @@
 package com.myspace.dynamic_subprocess_kjar;
 
+rule "Process Name"
+when
+    $s: String (this == "collegeName")
+then
+    //Do something
+end
