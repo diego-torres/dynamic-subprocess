@@ -6,3 +6,7 @@ when
 then
     insert(new ProcessExchangeModel("child-a", "a product was received with price: " + $p.getPrice()));
 end
+
+query "queryName"
+  $px: ProcessExchangeModel()
+end
