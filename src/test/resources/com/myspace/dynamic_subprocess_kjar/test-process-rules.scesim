@@ -53,7 +53,7 @@
           <factAlias>Product</factAlias>
           <expressionAlias>name</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>253.25</columnWidth>
+          <columnWidth>366.25</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -76,7 +76,7 @@
           <factAlias>Product</factAlias>
           <expressionAlias>price</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>253.25000000000006</columnWidth>
+          <columnWidth>366.25000000000006</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -99,7 +99,7 @@
           <factAlias>ProcessExchangeModel</factAlias>
           <expressionAlias>subprocess</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>253.25</columnWidth>
+          <columnWidth>366.25</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -122,7 +122,7 @@
           <factAlias>ProcessExchangeModel</factAlias>
           <expressionAlias>message</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>253.25000000000006</columnWidth>
+          <columnWidth>366.25000000000006</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
