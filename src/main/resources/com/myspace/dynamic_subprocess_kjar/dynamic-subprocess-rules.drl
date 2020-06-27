@@ -1,8 +1,8 @@
 package com.myspace.dynamic_subprocess_kjar;
 
-rule "Process Name"
+rule "Product X process"
 when
-    $s: String (this == "collegeName")
+    $p: Product (name == "Product X")
 then
-    //Do something
+    insert(new ProcessExchangeModel("child-a", "a product was received with price: " + $p.price()))
 end
