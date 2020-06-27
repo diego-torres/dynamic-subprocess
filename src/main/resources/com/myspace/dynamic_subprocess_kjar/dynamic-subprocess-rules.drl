@@ -1,13 +1,12 @@
 package com.myspace.dynamic_subprocess_kjar;
 
 rule "Product X process"
+no-loop true
 when
-    $p: Product (name == "Product X")
+    $p: Product (name == "Product X"),
+    $process : WorkflowProcessInstance( )
 then
-    System.out.println("Found the product X here!");
-    insert(new ProcessExchangeModel("child-a", "a product was received with price: " + $p.getPrice()));
-end
-
-query "qProcessExchange"
-  $px: ProcessExchangeModel()
+    WorkflowProcessInstance $p = (WorkflowProcessInstance)kcontext.getKieRuntime().getProcessInstance($process.getId()); //casting to WorkflowProcessInstance is essential
+    $p.setVariable( "processExchange", new ProcessExchange("child-a", "Product with price: " + $p.getPrice() );
+    retract($process);
 end
